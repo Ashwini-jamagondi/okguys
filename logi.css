@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: Arial;
+}
+body{
+    background-image:url("https://c4.wallpaperflare.com/wallpaper/882/32/906/night-fantasy-landscape-fantasy-art-fantasy-world-wallpaper-preview.jpg");
+    background-size:cover ;
+    overflow: hidden;
+}
+.login-form{
+    background-color: #efe6e60d;
+    border: 2px solid  rgb(244, 245, 236);
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:400px;
+    padding:40px;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(3px);
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+.login-form h1{
+     margin: 0 0 30px;
+     padding:0;
+     color:#fff;
+     text-align: center;
+}
+
+.login-form .user-input{
+    position:relative;
+}
+.user{
+    width:100%;
+    padding:10px 0px;
+    font-size:16px;
+    color:#fff;
+    margin-bottom:30px;
+    border:none;
+    border-bottom: 1px solid #fff ; 
+    outline:none;
+    background-color: transparent;
+}
+.user-input  i{
+     position: absolute;
+     right: 5px;
+     top:10px;
+     color: #fff;
+     font-size:20px;
+
+
+}
+.login-form .user-input label{
+     position:absolute;
+     top:0;
+     left:0;
+     padding: 10px 0;
+     font-size:16px;
+     color:#fff;
+     pointer-events: none;
+     transition: 0.5s ease;
+
+
+
+
+}
+.login-form .user-input .user:focus ~ label,
+.login-form .user-input  .user:valid ~label{
+    top:-15px;
+    left:0;
+    color:#fff;
+    font-size: 14px;
+}
+.login-form form .send{
+    margin:0 auto;
+    display: inline-block;
+    position: relative;
+    padding:10px 125px;
+    color:#000;
+    font-size:16px;
+    background-color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.5s ease;
+    margin-top:50px;
+    border:2px solid #fff;
+}
+.login-form .send:hover{
+    background-color: transparent;
+    color:#fff;
+}
+.reme{
+    color:#fff;
+    font-size:16px;
+}
+.forget{
+    color:#fff;
+    text-decoration: none;
+    margin-left:30px;
+}
+.forget:hover{
+    text-decoration:underline;
+}
+.register{
+    margin:20px;
+    color:#fff;
+    text-align: center;
+    font-size: 16px;
+}

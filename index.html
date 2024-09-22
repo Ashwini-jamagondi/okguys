@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="logi.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+   
+    <div class="login-form">
+    <h1>login</h1>
+    
+    <form  onsubmit="login(event)" >
+        <div class="user-input">
+         <input type="text" class="user" required id="">
+         <i class='bx bxs-user' ></i>
+         <label for="">Username</label>
+        </div>
+        <div class="user-input">
+            <input type="password" class="user" required id="">
+            <i class='bx bxs-lock-alt'></i>
+
+
+            <label for="">Password</label>
+           </div>
+           <div class="reme">
+            <input type="checkbox" name="" id="">Remember Me<a href="#" class="forget">Forget Password</a>
+           </div>
+           <button class="send">Login</button>
+
+           <div class="register">Don't have an account?<a href="#" class="reg">Register</a></div>
+        </div>
+       
+      </form>
+      <audio id="successAudio">
+        <source src="success.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+
+<script>
+    // Simulate a login success event
+    function login(event) {
+        event.preventDefault();
+
+        // Play the success sound
+        var audio = document.getElementById("successAudio");
+        audio.play();
+
+        // Use the Web Speech API for the AI voice
+        var msg = new SpeechSynthesisUtterance();
+        msg.text = "Login successful!";
+        msg.lang = "en-US";
+
+        // Speak the message using the Web Speech API
+        window.speechSynthesis.speak(msg);
+      
+        // Display a success message
+        alert("Login successful!");
+    }
+</script>
+</body>
+</html>
